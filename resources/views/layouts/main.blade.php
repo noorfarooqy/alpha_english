@@ -70,8 +70,8 @@
         <ul class="flex inline-block space-x-8 mx-10 my-4 text-white">
             <li> <a href="/" class="active hover:text-gray-300"> Teacher </a></li>
             <li> <a href="/" class="active hover:text-gray-300"> Parents </a></li>
-            <li> <a href="/" class="active hover:text-gray-300"> PPT Game </a></li>
-            <li> <a href="/" class="active hover:text-gray-300"> Flash Card </a></li>
+            <li> <a href="/" class="active hover:text-gray-300"> PPT </a></li>
+            <li> <a href="/" class="active hover:text-gray-300"> Exercise </a></li>
             <li> <a href="/" class="active hover:text-gray-300"> Mini Game </a></li>
             <li> <a href="/" class="active hover:text-gray-300"> Contact </a></li>
         </ul>
