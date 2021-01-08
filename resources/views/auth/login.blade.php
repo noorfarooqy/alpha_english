@@ -2,7 +2,8 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
+                <img src="/assets/images/footer_logo.png" alt="" srcset="">
             </a>
         </x-slot>
 
@@ -40,6 +41,13 @@
                 </label>
             </div>
 
+            <div class="block mt-4">
+                <label for="remember_me" class="inline-flex items-center">
+                    Not a member? 
+                     <a href="/register" class="text-danger">{{ __(' Register here') }}</a>
+                </label>
+            </div>
+
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
@@ -51,6 +59,7 @@
                     {{ __('Login') }}
                 </x-button>
             </div>
+
         </form>
     </x-auth-card>
 </x-guest-layout>

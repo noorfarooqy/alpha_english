@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\main\ExerciseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,12 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+
+Route::middleware(['auth'])->group(function(){
+    Route::prefix('/demo')->group(function(){
+        Route::get('/exercises',[ExerciseController::class, 'listExercise']);
+    });
+});
 
 require __DIR__.'/auth.php';

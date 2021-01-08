@@ -42,14 +42,29 @@
                 </li>
             </ul>
 
-            <ul class="flex inline-block space-x-8">
+            @auth
+                <ul class="flex inline-block space-x-8">
                 <li>
-                    <a href="/" class="active hover:text-gray-300">
-                        <i class="fas fa-user mr-2"></i>Login
+                    <a href="/dashboard" class="active hover:text-gray-300">
+                        <i class="fas fa-user mr-2"></i>Dashboard
                     </a>
                 </li>
                 <li>
                     <a href="/" class="active hover:text-gray-300">
+                        <i class="fas fa-search mr-2"></i>
+                    </a>
+                </li>
+            </ul>
+            @endauth
+            @guest
+                <ul class="flex inline-block space-x-8">
+                <li>
+                    <a href="/login" class="active hover:text-gray-300">
+                        <i class="fas fa-user mr-2"></i>Login
+                    </a>
+                </li>
+                <li>
+                    <a href="/register" class="active hover:text-gray-300">
                         <i class="fas fa-user-circle mr-2"></i>Register
                     </a>
                 </li>
@@ -59,6 +74,7 @@
                     </a>
                 </li>
             </ul>
+            @endguest
 
 
         </nav>
