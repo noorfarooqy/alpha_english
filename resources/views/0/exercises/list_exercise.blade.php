@@ -9,22 +9,18 @@ Exercise
 @endsection
 
 @section('content')
-@php
-$collection = [1,2,3,4];
-@endphp
-@foreach ($collection as $key=> $item)
+@foreach ($exercises as $key=> $exercise)
 <div class="col-lg-4">
     <div class="card">
         <div class="shopping-card">
-            <img class="img-responsive" src="/admin/assets/images/product.jpg" alt="">
+            <img class="img-responsive" src="/assets/demo/exercise/images/{{$exercise}}.png" alt="">
         </div>
         <div class="shopping-card-text text-center">
-            <h4>Sports Shoes</h4>
-            <p>Some quick example text.</p>
+            <h4>{{ucfirst(str_replace('_', ' ', $exercise))}}</h4>
         </div>
-        <div class="text-center p-t-30 p-b-20">
+        <div class="text-center ">
             {{-- <span class="p-10 color-danger f-w-400">$150</span> --}}
-            <button class="btn btn-danger bg-danger btn-outline">View Exercise</button>
+            <a href="/demo/fetch/exercise?exercise={{$exercise}}" class="btn btn-danger bg-danger btn-outline">View Exercise</a>
         </div>
     </div>
 </div>

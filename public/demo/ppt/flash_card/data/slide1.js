@@ -1,0 +1,4 @@
+(function(){var loadHandler=window['sl_{F3494A56-90C3-45B1-9102-9B12A3158D9A}'];loadHandler&&loadHandler(0, '<div id="spr0_239cb9b6"><div id="spr1_239cb9b6" class="kern slide"><img id="img3_239cb9b6" src="data/img3.png" width="960px" height="540px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_239cb9b6" class="kern slide"><div id="spr3_239cb9b6"><img id="img0_239cb9b6" src="data/img0.png" width="960" height="540" alt=""/></div><div id="spr4_239cb9b6" style="left:395px;top:243px;"><img id="img1_239cb9b6" src="data/img1.png" width="215" height="108" alt="Flashcard\
+Action"/></div><div id="spr5_239cb9b6" style="left:673px;top:472px;"><img id="img2_239cb9b6" src="data/img2.png" width="260" height="50" alt="Logo\
+\
+Description automatically generated"/></div></div></div>', '{"s":[]}');})();

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\main\ExerciseController;
+use App\Http\Controllers\main\GamesController;
+use App\Http\Controllers\main\PPTController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,7 +27,15 @@ Route::get('/dashboard', function () {
 
 Route::middleware(['auth'])->group(function(){
     Route::prefix('/demo')->group(function(){
+
+        Route::get('/fetch/exercise',[ExerciseController::class, 'getExercise']);
         Route::get('/exercises',[ExerciseController::class, 'listExercise']);
+
+        Route::get('/ppt/{ppt_name}/fetch',[PPTController::class, 'getPPT']);
+        Route::get('/ppts',[PPTController::class, 'listPPTs']);
+
+        Route::get('/igames', [GamesController::class, 'listGames']);
+        Route::get('/igame/{game_name}/fetch', [GamesController::class, 'getGame']);
     });
 });
 

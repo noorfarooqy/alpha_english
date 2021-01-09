@@ -5,7 +5,7 @@
             <ul>
                 <li class="label">Demonstration</li>
                 <li class="">
-                    <a href="/demo/games" class=""><i class="ti-game"></i> Games </a>
+                    <a href="/demo/igames" class=""><i class="ti-game"></i> Games </a>
                 </li>
                 <li class="">
                     <a href="/demo/ppts" class=""><i class="ti-files"></i> PPTs </a>
