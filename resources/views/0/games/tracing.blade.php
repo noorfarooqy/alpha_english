@@ -23,7 +23,7 @@
       </div>
     </div>
     <script>
-      var buildUrl = "Build";
+      var buildUrl = "/demo/games/tracing/Build";
       var loaderUrl = buildUrl + "/WSmart.loader.js";
       var config = {
         dataUrl: buildUrl + "/WSmart.data",

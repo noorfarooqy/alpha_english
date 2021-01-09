@@ -23,7 +23,7 @@
       </div>
     </div>
     <script>
-      var buildUrl = "Build";
+      var buildUrl = "/demo/games/happy_monster/Build";
       var loaderUrl = buildUrl + "/test.loader.js";
       var config = {
         dataUrl: buildUrl + "/test.data",
