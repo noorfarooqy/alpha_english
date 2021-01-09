@@ -1,12 +1,19 @@
-@extends('layouts.auth_layout')
+<x-guest-layout>
+    <x-auth-card>
+        <x-slot name="logo">
+            <a href="/">
+                {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
+                <img src="/assets/images/footer_logo.png" alt="" srcset="">
+            </a>
+        </x-slot>
 
-@section('content')
-<!-- Session Status -->
+        <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-    <form method="POST" action="{{ route('login') }}">
+
+        <form method="POST" action="{{ route('login') }}">
             @csrf
 
             <!-- Email Address -->
@@ -54,4 +61,5 @@
             </div>
 
         </form>
-@endsection
+    </x-auth-card>
+</x-guest-layout>

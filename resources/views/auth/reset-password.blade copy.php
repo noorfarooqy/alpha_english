@@ -1,7 +1,12 @@
-@extends('layouts.auth_layout')
+<x-guest-layout>
+    <x-auth-card>
+        <x-slot name="logo">
+            <a href="/">
+                <img src="/assets/images/footer_logo.png" alt="" srcset="">
+            </a>
+        </x-slot>
 
-@section('content')
-     <!-- Validation Errors -->
+        <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{ route('password.update') }}">
@@ -39,4 +44,5 @@
                 </x-button>
             </div>
         </form>
-@endsection
+    </x-auth-card>
+</x-guest-layout>
