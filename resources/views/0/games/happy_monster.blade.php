@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | HappyMonster</title>
-    <link rel="shortcut icon" href="/demo/games/happy_monster/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="/demo/games/happy_monster/TemplateData/style.css">
+    <link rel="shortcut icon" href="/demo/games/hme/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/demo/games/hme/TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -23,12 +23,12 @@
       </div>
     </div>
     <script>
-      var buildUrl = "/demo/games/happy_monster/Build";
-      var loaderUrl = buildUrl + "/test.loader.js";
+      var buildUrl = "/demo/games/hme/Build";
+      var loaderUrl = buildUrl + "/HME.loader.js";
       var config = {
-        dataUrl: buildUrl + "/test.data",
-        frameworkUrl: buildUrl + "/test.framework.js",
-        codeUrl: buildUrl + "/test.wasm",
+        dataUrl: buildUrl + "/HME.data",
+        frameworkUrl: buildUrl + "/HME.framework.js",
+        codeUrl: buildUrl + "/HME.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "KooStem",
         productName: "HappyMonster",
